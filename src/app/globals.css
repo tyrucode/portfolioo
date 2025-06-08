@@ -5,7 +5,12 @@ body {
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(135deg, var(--background) 0%, #0f1419 100%);
   color: var(--text-color);
+
+}
+
+html,
+body {
+  height: 100%;
   margin: 0;
-  padding: 20px;
-  min-height: 100vh;
+  padding: 0;
 }
