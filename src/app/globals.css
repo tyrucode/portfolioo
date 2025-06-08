@@ -1,11 +1,17 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+:root {
+  --aurora-color-1: #13FFAA;
+  --aurora-color-2: #1E67C6;
+  --aurora-color-3: #CE84CF;
+  --aurora-color-4: #DD335C;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(135deg, var(--background) 0%, #0f1419 100%);
   color: var(--text-color);
-
+  overflow-x: hidden;
 }
 
 html,
@@ -13,4 +19,94 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background: #020617;
 }
+
+/* Aurora Background Animation */
+.aurora-background {
+  /* background: radial-gradient(125% 125% at 50% 0%, #020617 50%, var(--aurora-color-1)); */
+  animation: aurora-shift 10s ease-in-out infinite;
+  position: relative;
+}
+
+/* 
+.aurora-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(125% 125% at 50% 0%, transparent 50%, var(--aurora-color-2));
+  animation: aurora-shift-2 8s ease-in-out infinite reverse;
+  opacity: 0.7;
+}
+
+.aurora-background::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(125% 125% at 50% 0%, transparent 50%, var(--aurora-color-3));
+  animation: aurora-shift-3 12s ease-in-out infinite;
+  opacity: 0.5;
+} */
+
+/* @keyframes aurora-shift {
+
+  0%,
+  100% {
+
+    background: radial-gradient(125% 125% at 50% 0%, #020617 50%, var(--aurora-color-1));
+  }
+
+  25% {
+    background: radial-gradient(125% 125% at 50% 0%, #020617 50%, var(--aurora-color-2));
+  }
+
+  50% {
+    background: radial-gradient(125% 125% at 50% 0%, #020617 50%, var(--aurora-color-3));
+  }
+
+  75% {
+    background: radial-gradient(125% 125% at 50% 0%, #020617 50%, var(--aurora-color-4));
+  }
+}
+
+@keyframes aurora-shift-2 {
+
+  0%,
+  100% {
+    background: radial-gradient(125% 125% at 50% 0%, transparent 50%, var(--aurora-color-2));
+  }
+
+  25% {
+    background: radial-gradient(125% 125% at 50% 0%, transparent 50%, var(--aurora-color-3));
+  }
+
+  50% {
+    background: radial-gradient(125% 125% at 50% 0%, transparent 50%, var(--aurora-color-4));
+  }
+
+  75% {
+    background: radial-gradient(125% 125% at 50% 0%, transparent 50%, var(--aurora-color-1));
+  }
+}
+
+@keyframes aurora-shift-3 {
+
+  0%,
+  100% {
+    background: radial-gradient(125% 125% at 50% 0%, transparent 50%, var(--aurora-color-3));
+  }
+
+  33% {
+    background: radial-gradient(125% 125% at 50% 0%, transparent 50%, var(--aurora-color-4));
+  }
+
+  66% {
+    background: radial-gradient(125% 125% at 50% 0%, transparent 50%, var(--aurora-color-1));
+  }
+} */
