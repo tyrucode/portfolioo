@@ -145,7 +145,20 @@ export default function Home() {
                   {/* EXPERIENCE */}
                   <SectionBorder className="mb-20">
                     <h2 className="text-4xl font-bold text-white mb-8">Experience</h2>
-
+                    <div className="bg-gray-900/30 backdrop-blur-sm rounded-lg p-8 border border-gray-700/50">
+                      <div className="flex flex-col sm:flex-row items-center justify-between mb-6">
+                        <h3 className="text-2xl font-semibold text-white mb-4">Springboard Software Engineering Career Track</h3>
+                        <h3 className="text-2xl font-semibold text-white mb-4 " >2024-2025</h3>
+                      </div>
+                      <div>
+                        <p className="text-gray-300 text-lg mb-6">
+                          Completed the Springboard Software Engineering Career Track, an intensive, project-based 700+ hour
+                          bootcamp focused on full-stack
+                          web development. The program covered core technologies such as JavaScript, React, Node.js, Express, and PostgreSQL, while
+                          emphasizing best practices in software design, algorithms, and version control.
+                        </p>
+                      </div>
+                    </div>
                   </SectionBorder>
                   {/* CONTACT */}
                   <SectionBorder className="pb-20">
