@@ -1,9 +1,12 @@
 "use client";
+
 import { AuroraHero } from "@/components/ui/AuroraHero";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import SectionBorder from "@/components/ui/SectionBorder";
 import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import Image from 'next/image'
+
 
 export default function Home() {
   return (
@@ -82,7 +85,13 @@ export default function Home() {
                         <span className="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm">TypeScript</span>
                       </div>
                       <div>
-                        <img src="" alt="" />
+                        <Image 
+                        src="/portfolioss.png" 
+                        alt="Image"
+                        width={500}
+                        height={500}
+                        
+                        />
                       </div>
                     </div>
 
@@ -95,6 +104,14 @@ export default function Home() {
                         <span className="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">React</span>
                         <span className="px-3 py-1 bg-yellow-600/20 text-yellow-300 rounded-full text-sm">D3.js</span>
                         <span className="px-3 py-1 bg-pink-600/20 text-pink-300 rounded-full text-sm">Tailwind</span>
+                      </div>
+                      <div>
+                        <Image 
+                        src="/screenshotforportfolio.png" 
+                        alt="Image"
+                        width={500}
+                        height={500}
+                        />
                       </div>
                     </div>
                   </div>
