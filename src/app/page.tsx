@@ -111,13 +111,16 @@ export default function Home() {
                           <span className="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm">TypeScript</span>
                         </div>
                         <div>
-                          <Image
-                            src="/portfolioss.png"
-                            alt="Image"
-                            width={500}
-                            height={500}
+                          <div className="flex justify-center mt-8">
+                            <Image
+                              className="rounded-xl shadow-xl/20"
+                              src="/portfolioss.png"
+                              alt="Image"
+                              width={500}
+                              height={500}
 
-                          />
+                            />
+                          </div>
                         </div>
                       </div>
 
@@ -132,12 +135,15 @@ export default function Home() {
                           <span className="px-3 py-1 bg-pink-600/20 text-pink-300 rounded-full text-sm">Tailwind</span>
                         </div>
                         <div>
-                          <Image
-                            src="/screenshotforportfolio.png"
-                            alt="Image"
-                            width={500}
-                            height={500}
-                          />
+                          <div className="flex justify-center mt-8">
+                            <Image
+                              className="rounded-xl shadow-xl/20"
+                              src="/screenshotforportfolio.png"
+                              alt="Image"
+                              width={500}
+                              height={500}
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -157,6 +163,15 @@ export default function Home() {
                           web development. The program covered core technologies such as JavaScript, React, Node.js, Express, and PostgreSQL, while
                           emphasizing best practices in software design, algorithms, and version control.
                         </p>
+                        <div className="flex justify-center mt-8">
+                          <Image
+                            className="rounded-xl shadow-xl/20"
+                            src="/springboard_logo.png"
+                            alt="Image"
+                            width={150}
+                            height={150}
+                          />
+                        </div>
                       </div>
                     </div>
                   </SectionBorder>
