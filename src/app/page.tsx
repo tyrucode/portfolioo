@@ -7,6 +7,7 @@ import { Canvas } from "@react-three/fiber";
 
 export default function Home() {
   return (
+    <>
     <div className="min-h-screen relative">
       <div className="fixed inset-0 z-0">
         <div className="aurora-background h-full w-full"></div>
@@ -70,23 +71,25 @@ export default function Home() {
                   <h2 className="text-4xl font-bold text-white mb-8">Projects</h2>
                   <div className="space-y-8">
                     <div className="bg-gray-900/30 backdrop-blur-sm rounded-lg p-8 border border-gray-700/50">
-                      <h3 className="text-2xl font-semibold text-white mb-4">Project One</h3>
+                      <h3 className="text-2xl font-semibold text-white mb-4">Guessify</h3>
                       <p className="text-gray-300 mb-4">
-                        A dynamic web application built with Next.js and PostgreSQL that
-                        showcases modern development practices and user-centered design.
+                        Developed a dynamic web game where users connect their own Spotify playlists to guess song titles and compete for high scores. Inspired by Wordle, Guessify blends music and gameplay to create a personalized and shareable challenge for anyone who enjoys music.
                       </p>
+                      
                       <div className="flex flex-wrap gap-2">
                         <span className="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Next.js</span>
                         <span className="px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm">PostgreSQL</span>
                         <span className="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm">TypeScript</span>
                       </div>
+                      <div>
+                        <img src="" alt="" />
+                      </div>
                     </div>
 
                     <div className="bg-gray-900/30 backdrop-blur-sm rounded-lg p-8 border border-gray-700/50">
-                      <h3 className="text-2xl font-semibold text-white mb-4">Project Two</h3>
+                      <h3 className="text-2xl font-semibold text-white mb-4">SteamFinder GPT</h3>
                       <p className="text-gray-300 mb-4">
-                        An interactive dashboard featuring real-time data visualization
-                        and responsive design principles for optimal user experience.
+                        Developer a tool that allows users to connect their steam data using the steam api and allow chatgpt to give personalized reccomendations to games based on the users previous gaming history and the time they have spent on those games.
                       </p>
                       <div className="flex flex-wrap gap-2">
                         <span className="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">React</span>
@@ -114,6 +117,7 @@ export default function Home() {
                         href="mailto:tyler@example.com"
                         className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
                         target="_blank"
+                        rel="noopener"
                       >
                         Email Me
                       </a>
@@ -121,6 +125,7 @@ export default function Home() {
                         href="https://linkedin.com/in/tylerruiz"
                         target="_blank"
                         className="px-6 py-3 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors"
+                        rel="noopener"
                       >
                         LinkedIn
                       </a>
@@ -130,8 +135,9 @@ export default function Home() {
               </div>
             </div>
           </TracingBeam>
-        </main >
-      </div >
-    </div >
+        </main>
+      </div>
+    </div>
+    </>
   );
 }
