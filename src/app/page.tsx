@@ -72,6 +72,7 @@ export default function Home() {
                         <ul className="text-gray-300 space-y-2">
                           <li>• Node.JS <SiNodedotjs className="inline mb-1" /></li>
                           <li>• Express.JS <SiExpress className="inline mb-1" /></li>
+                          <li>• Axios <SiAxios className="inline mb-1" /></li>
                         </ul>
                       </div>
                       <div className="bg-gray-900/30 backdrop-blur-sm rounded-lg p-6 border border-gray-700/50">
@@ -88,7 +89,6 @@ export default function Home() {
                           <li>• Ubuntu <SiUbuntu className="inline mb-1" /></li>
                           <li>• Linux <SiLinux className="inline mb-1" /></li>
                           <li>• Git/Github <SiGithub className="inline mb-1" /></li>
-                          <li>• Axios <SiAxios className="inline mb-1" /></li>
                           <li>• Vercel <SiVercel className="inline mb-1" /></li>
 
                         </ul>
