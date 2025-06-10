@@ -7,8 +7,9 @@ import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import Image from 'next/image'
 import { SiReact, SiTypescript, SiVercel, SiGithub, SiAxios, SiJavascript, SiLinux, SiUbuntu, SiTailwindcss, SiPostgresql, SiNodedotjs, SiExpress, SiMongodb, SiMysql } from "react-icons/si";
-import { RiNextjsFill } from "react-icons/ri";
+import { RiNextjsFill, RiLinkM } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
+
 
 
 
@@ -121,6 +122,18 @@ export default function Home() {
 
                             />
                           </div>
+                          <div className="flex m4 gap-6">
+                            <a href="https://official-capstone.vercel.app/"
+                              target="_blank"
+                              rel="noopener">
+                              <RiLinkM className="text-white scale-150 transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-200" />
+                            </a>
+                            <a href="https://github.com/tyrucode/OfficialCapstone"
+                              target="_blank"
+                              rel="noopener">
+                              <SiGithub className="text-white scale-125 transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-175" />
+                            </a>
+                          </div>
                         </div>
                       </div>
 
@@ -143,6 +156,18 @@ export default function Home() {
                               width={500}
                               height={500}
                             />
+                          </div>
+                          <div className="flex m4 gap-6">
+                            <a href="https://steam-game-finder-orcin.vercel.app/"
+                              target="_blank"
+                              rel="noopener">
+                              <RiLinkM className="text-white scale-150 transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-200" />
+                            </a>
+                            <a href="https://github.com/tyrucode/steamGameFinder"
+                              target="_blank"
+                              rel="noopener">
+                              <SiGithub className="text-white scale-125 transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-175" />
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -172,6 +197,13 @@ export default function Home() {
                             height={150}
                           />
                         </div>
+                        <div className="flex m4 gap-6">
+                          <a href="https://www.linkedin.com/posts/tyler-ruiz-84a287305_software-engineering-career-track-foundations-activity-7330730742630576130-oFIl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE3RI_oByms7BHBJZxhZrUFIpuoSAj3_R5Y"
+                            target="_blank"
+                            rel="noopener">
+                            <RiLinkM className="text-white scale-150 transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-200" />
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </SectionBorder>
@@ -193,9 +225,9 @@ export default function Home() {
                           Email Me
                         </a>
                         <a
+                          className="px-6 py-3 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors"
                           href="https://linkedin.com/in/tylerruiz"
                           target="_blank"
-                          className="px-6 py-3 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors"
                           rel="noopener"
                         >
                           LinkedIn
@@ -206,9 +238,9 @@ export default function Home() {
                 </div>
               </div>
             </TracingBeam>
-          </main>
-        </div>
-      </div>
+          </main >
+        </div >
+      </div >
     </>
   );
 }
