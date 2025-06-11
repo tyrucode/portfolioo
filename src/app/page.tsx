@@ -10,19 +10,22 @@ import { SiReact, SiTypescript, SiVercel, SiGithub, SiAxios, SiJavascript, SiLin
 import { RiNextjsFill, RiLinkM } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import IconSideNav from "@/components/ui/IconSideNav";
+import AiChipp from "@/components/ui/AiChipp";
 
 export default function Home() {
+
   return (
     <>
       <main className="relative">
         <IconSideNav />
+        <div className="chipp-chat-widget" />
         <div className="min-h-screen max-h-screen relative">
           <div className="fixed inset-0 z-0">
             <div className="aurora-background h-full w-full"></div>
           </div>
           <div className="fixed inset-0 z-[1]">
             <Canvas className="!h-full !w-full">
-              <Stars radius={50} count={2500} factor={4} fade speed={2} />
+              <Stars radius={50} count={2500} factor={4} fade speed={1} />
             </Canvas>
           </div>
           <div className="relative z-10">
@@ -256,6 +259,7 @@ export default function Home() {
             </TracingBeam>
           </div >
         </div >
+        <AiChipp />
       </main >
     </>
   );
