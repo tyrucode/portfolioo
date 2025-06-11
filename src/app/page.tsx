@@ -9,6 +9,7 @@ import Image from 'next/image'
 import { SiReact, SiTypescript, SiVercel, SiGithub, SiAxios, SiJavascript, SiLinux, SiUbuntu, SiTailwindcss, SiPostgresql, SiNodedotjs, SiExpress, SiMongodb, SiMysql } from "react-icons/si";
 import { RiNextjsFill, RiLinkM } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
+import IconSideNav from "@/components/ui/IconSideNav";
 
 
 
@@ -20,7 +21,7 @@ export default function Home() {
       <main className="relative">
         <div className="min-h-screen max-h-screen relative">
           <div className="fixed inset-0 z-0">
-            <div className="aurora-background h-full w-full"></div>
+            <div className="aurora-background h-full w-full"> <IconSideNav /></div>
           </div>
           <div className="fixed inset-0 z-[1]">
             <Canvas className="!h-full !w-full">
