@@ -9,6 +9,8 @@ import Image from 'next/image'
 import { SiReact, SiTypescript, SiVercel, SiGithub, SiAxios, SiJavascript, SiLinux, SiUbuntu, SiTailwindcss, SiPostgresql, SiNodedotjs, SiExpress, SiMongodb, SiMysql } from "react-icons/si";
 import { RiNextjsFill, RiLinkM } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
+import { HiOutlineMail } from "react-icons/hi";
+
 
 
 
@@ -25,7 +27,6 @@ export default function Home() {
             <Stars radius={50} count={2500} factor={4} fade speed={2} />
           </Canvas>
         </div>
-        {/* Content Layer */}
         <div className="relative z-10">
           <header>
             <AuroraHero />
@@ -107,9 +108,12 @@ export default function Home() {
                         </p>
 
                         <div className="flex flex-wrap gap-2">
-                          <span className="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Next.js</span>
-                          <span className="px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm">PostgreSQL</span>
-                          <span className="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm">TypeScript</span>
+                          <span className="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Javascript</span>
+                          <span className="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm">React</span>
+                          <span className="px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm">Express.JS</span>
+                          <span className="px-3 py-1 bg-pink-600/20 text-pink-300 rounded-full text-sm">MongoDB</span>
+                          <span className="px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm">Tailwind</span>
+                          <span className="px-3 py-1 bg-indigo-600/20 text-indigo-300 rounded-full text-sm">Vite</span>
                         </div>
                         <div>
                           <div className="flex justify-center mt-8">
@@ -143,9 +147,12 @@ export default function Home() {
                           Developer a tool that allows users to connect their steam data using the steam api and allow chatgpt to give personalized reccomendations to games based on the users previous gaming history and the time they have spent on those games.
                         </p>
                         <div className="flex flex-wrap gap-2">
-                          <span className="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">React</span>
-                          <span className="px-3 py-1 bg-yellow-600/20 text-yellow-300 rounded-full text-sm">D3.js</span>
+                          <span className="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Javascript</span>
+                          <span className="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm">React</span>
+                          <span className="px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm">Express.JS</span>
                           <span className="px-3 py-1 bg-pink-600/20 text-pink-300 rounded-full text-sm">Tailwind</span>
+                          <span className="px-3 py-1 bg-green-600/20 text-green-300 rounded-full text-sm">Framer-Motion</span>
+                          <span className="px-3 py-1 bg-indigo-600/20 text-indigo-300 rounded-full text-sm">Vite</span>
                         </div>
                         <div>
                           <div className="flex justify-center mt-8">
@@ -208,30 +215,42 @@ export default function Home() {
                     </div>
                   </SectionBorder>
                   {/* CONTACT */}
-                  <SectionBorder className="pb-20">
+                  <SectionBorder>
                     <h2 className="text-4xl font-bold text-white mb-8">Contact</h2>
                     <div className="bg-gray-900/30 backdrop-blur-sm rounded-lg p-8 border border-gray-700/50">
                       <p className="text-gray-300 text-lg mb-6">
-                        I'm always interested in new opportunities and collaborations.
-                        Feel free to reach out if you'd like to work together!
+                        I'm always open to new opportunities and collaborations.
+                        Feel free to reach out if you'd like to work together or simply connect via email or LinkedIn.
+                        You can also check out my projects on GitHub!
                       </p>
-                      <div className="flex flex-col sm:flex-row gap-4">
+                      <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
                           href="mailto:tyler@example.com"
-                          className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
+                          className="px-6 py-3 bg-indigo-500 hover:bg-indigo-600 text-white rounded-lg transition-colors"
                           target="_blank"
                           rel="noopener"
                         >
                           Email Me
                         </a>
+
                         <a
-                          className="px-6 py-3 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors"
+                          className="px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white rounded-lg transition-colors"
                           href="https://linkedin.com/in/tylerruiz"
                           target="_blank"
                           rel="noopener"
                         >
                           LinkedIn
                         </a>
+
+                        <a
+                          className="px-6 py-3 bg-gray-800 hover:bg-gray-900 text-white rounded-lg transition-colors"
+                          href="https://github.com/tyrucode"
+                          target="_blank"
+                          rel="noopener"
+                        >
+                          GitHub
+                        </a>
+
                       </div>
                     </div>
                   </SectionBorder>
