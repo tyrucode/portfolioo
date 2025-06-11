@@ -2,8 +2,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Dispatch, SetStateAction, useState } from "react";
 import {
     SiFramer,
-    SiTailwindcss,
-    SiReact,
+    SiGithub,
+    SiLinkedin,
     SiJavascript,
     SiCss3,
 } from "react-icons/si";
@@ -12,7 +12,7 @@ import { RiHome2Fill } from "react-icons/ri";
 
 const IconSideNav = () => {
     return (
-        <div className="bg-slate-950 text-slate-100 flex">
+        <div className="bg-slate-950 text-slate-100  z-50 flex fixed ">
             <SideNav />
         </div >
     );
@@ -20,7 +20,14 @@ const IconSideNav = () => {
 
 const SideNav = () => {
     const [selected, setSelected] = useState(0);
-
+    if (selected === 1) {
+        window.open('https://github.com/tyrucode', '_blank');
+        setSelected(0);
+    }
+    if (selected === 2) {
+        window.open('https://www.linkedin.com/in/tyler-ruiz-84a287305/', '_blank');
+        setSelected(0);
+    }
     return (
 
         <nav className="h-screen w-fit bg-slate-950 p-4 flex flex-col items-center gap-2  border-r border-slate-700" >
@@ -29,16 +36,10 @@ const SideNav = () => {
                 <RiHome2Fill />
             </NavItem>
             <NavItem selected={selected === 1} id={1} setSelected={setSelected}>
-                <SiReact />
+                <SiGithub />
             </NavItem>
             <NavItem selected={selected === 2} id={2} setSelected={setSelected}>
-                <SiJavascript />
-            </NavItem>
-            <NavItem selected={selected === 3} id={3} setSelected={setSelected}>
-                <SiFramer />
-            </NavItem>
-            <NavItem selected={selected === 4} id={4} setSelected={setSelected}>
-                <SiCss3 />
+                <SiLinkedin />
             </NavItem>
         </nav >
     );

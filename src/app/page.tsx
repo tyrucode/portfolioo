@@ -11,17 +11,14 @@ import { RiNextjsFill, RiLinkM } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import IconSideNav from "@/components/ui/IconSideNav";
 
-
-
-
-
 export default function Home() {
   return (
     <>
       <main className="relative">
+        <IconSideNav />
         <div className="min-h-screen max-h-screen relative">
           <div className="fixed inset-0 z-0">
-            <div className="aurora-background h-full w-full"> <IconSideNav /></div>
+            <div className="aurora-background h-full w-full"></div>
           </div>
           <div className="fixed inset-0 z-[1]">
             <Canvas className="!h-full !w-full">
@@ -225,7 +222,7 @@ export default function Home() {
                       </p>
                       <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
-                          href="mailto:tyler@example.com"
+                          href="mailto:ruiztyler24@gmail.com"
                           className="px-6 py-3 bg-indigo-500 hover:bg-indigo-600 text-white rounded-lg transition-colors"
                           target="_blank"
                           rel="noopener"
@@ -235,7 +232,7 @@ export default function Home() {
 
                         <a
                           className="px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white rounded-lg transition-colors"
-                          href="https://linkedin.com/in/tylerruiz"
+                          href="https://www.linkedin.com/in/tyler-ruiz-84a287305/"
                           target="_blank"
                           rel="noopener"
                         >
