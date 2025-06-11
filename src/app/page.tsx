@@ -10,7 +10,6 @@ import { SiReact, SiTypescript, SiVercel, SiGithub, SiAxios, SiJavascript, SiLin
 import { RiNextjsFill, RiLinkM } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import IconSideNav from "@/components/ui/IconSideNav";
-import AiChipp from "@/components/ui/AiChipp";
 
 export default function Home() {
 
@@ -18,7 +17,6 @@ export default function Home() {
     <>
       <main className="relative">
         <IconSideNav />
-        <div className="chipp-chat-widget" />
         <div className="min-h-screen max-h-screen relative">
           <div className="fixed inset-0 z-0">
             <div className="aurora-background h-full w-full"></div>
@@ -29,7 +27,7 @@ export default function Home() {
             </Canvas>
           </div>
           <div className="relative z-10">
-            <header>
+            <header className="z-0">
               <AuroraHero />
             </header>
             <TracingBeam>
@@ -259,7 +257,6 @@ export default function Home() {
             </TracingBeam>
           </div >
         </div >
-        <AiChipp />
       </main >
     </>
   );

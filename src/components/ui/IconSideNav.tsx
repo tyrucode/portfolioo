@@ -1,23 +1,19 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Dispatch, SetStateAction, useState } from "react";
 import {
-    SiFramer,
     SiGithub,
     SiLinkedin,
-    SiJavascript,
-    SiCss3,
 } from "react-icons/si";
 import { RiHome2Fill } from "react-icons/ri";
 
 
 const IconSideNav = () => {
     return (
-        <div className="bg-slate-950 text-slate-100  z-50 flex fixed ">
+        <div className="bg-slate-950 text-slate-100  z-50 flex fixed lg:visible invisible">
             <SideNav />
         </div >
     );
 };
-
 const SideNav = () => {
     const [selected, setSelected] = useState(0);
     if (selected === 1) {
