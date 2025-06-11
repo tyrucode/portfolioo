@@ -17,20 +17,20 @@ import { TbBrandFramerMotion } from "react-icons/tb";
 export default function Home() {
   return (
     <>
-      <div className="min-h-screen relative">
-        <div className="fixed inset-0 z-0">
-          <div className="aurora-background h-full w-full"></div>
-        </div>
-        <div className="fixed inset-0 z-[1]">
-          <Canvas className="!h-full !w-full">
-            <Stars radius={50} count={2500} factor={4} fade speed={2} />
-          </Canvas>
-        </div>
-        <div className="relative z-10">
-          <header>
-            <AuroraHero />
-          </header>
-          <main className="relative">
+      <main className="relative">
+        <div className="min-h-screen max-h-screen relative">
+          <div className="fixed inset-0 z-0">
+            <div className="aurora-background h-full w-full"></div>
+          </div>
+          <div className="fixed inset-0 z-[1]">
+            <Canvas className="!h-full !w-full">
+              <Stars radius={50} count={2500} factor={4} fade speed={2} />
+            </Canvas>
+          </div>
+          <div className="relative z-10">
+            <header>
+              <AuroraHero />
+            </header>
             <TracingBeam>
               <div className="py-20 px-4">
                 <div className="max-w-4xl mx-auto">
@@ -256,9 +256,9 @@ export default function Home() {
                 </div>
               </div>
             </TracingBeam>
-          </main >
+          </div >
         </div >
-      </div >
+      </main >
     </>
   );
 }
