@@ -17,32 +17,32 @@ export default function Home() {
 
   return (
     <>
-      <main >
+      <main className="relative z-10">
         <IconSideNav />
-        <div>
-          <div className="fixed inset-0 z-0">
-            <div className="aurora-background h-full w-full">
-              <BackgroundStars />
-            </div>
+        <div className="fixed inset-0 z-0">
+          <div className="aurora-background h-full w-full">
+            <BackgroundStars />
           </div>
-          <div className="relative z-10">
-            <header className="z-0">
-              <AuroraHero />
-            </header>
-            <TracingBeam>
-              <div className="py-20 px-4">
-                <div className="max-w-4xl mx-auto">
-                  {/* ALL UI SECTIONS */}
-                  <AboutMe />
-                  <Skills />
-                  <Projects />
-                  <Experience />
-                  <Contact />
-                </div>
+        </div>
+        <div className="relative z-10">
+          <header className="z-0">
+            <AuroraHero />
+          </header>
+          <TracingBeam>
+            {/* Reduced padding from py-20 to py-10 and added pb-4 to reduce bottom space */}
+            <div className="py-10 px-4 pb-4">
+              <div className="max-w-4xl mx-auto">
+                {/* ALL UI SECTIONS */}
+                <AboutMe />
+                <Skills />
+                <Projects />
+                <Experience />
+                <Contact />
               </div>
-            </TracingBeam>
-          </div >
+            </div>
+          </TracingBeam>
         </div >
+
       </main >
     </>
   );
