@@ -15,16 +15,17 @@ export default function Home() {
 
   return (
     <>
-      <main className="relative">
+      <main >
         <IconSideNav />
-        <div className="min-h-screen max-h-screen relative">
+        <div >
           <div className="fixed inset-0 z-0">
-            <div className="aurora-background h-full w-full"></div>
-          </div>
-          <div className="fixed inset-0 z-[1]">
-            <Canvas className="!h-full !w-full">
-              <Stars radius={50} count={2500} factor={4} fade speed={1} />
-            </Canvas>
+            <div className="aurora-background h-full w-full">
+              <div className="fixed inset-0 ">
+                <Canvas className="!h-full !w-full">
+                  <Stars radius={50} count={2500} factor={4} fade speed={1} />
+                </Canvas>
+              </div>
+            </div>
           </div>
           <div className="relative z-10">
             <header className="z-0">
