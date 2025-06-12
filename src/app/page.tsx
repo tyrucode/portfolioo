@@ -3,8 +3,7 @@
 import { AuroraHero } from "@/components/ui/AuroraHero";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import SectionBorder from "@/components/ui/SectionBorder";
-import { Stars } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
+import BackgroundStars from "@/components/ui/BackgroundStars";
 import Image from 'next/image'
 import { SiReact, SiTypescript, SiVercel, SiGithub, SiAxios, SiJavascript, SiLinux, SiUbuntu, SiTailwindcss, SiPostgresql, SiNodedotjs, SiExpress, SiMongodb, SiMysql } from "react-icons/si";
 import { RiNextjsFill, RiLinkM } from "react-icons/ri";
@@ -17,14 +16,10 @@ export default function Home() {
     <>
       <main >
         <IconSideNav />
-        <div >
+        <div>
           <div className="fixed inset-0 z-0">
             <div className="aurora-background h-full w-full">
-              <div className="fixed inset-0 ">
-                <Canvas className="!h-full !w-full">
-                  <Stars radius={50} count={2500} factor={4} fade speed={1} />
-                </Canvas>
-              </div>
+              <BackgroundStars />
             </div>
           </div>
           <div className="relative z-10">

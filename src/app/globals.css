@@ -12,12 +12,10 @@ body {
   font-family: 'Roboto', sans-serif;
   color: var(--text-color);
   overflow-x: hidden;
-
 }
 
 html {
   scroll-behavior: smooth;
-
 }
 
 html,
@@ -25,7 +23,19 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+
   background: #020617;
+}
+
+/* Prevent content from being shorter than viewport */
+main {
+  min-height: 100vh;
+}
+
+/* Ensure the main content container doesn't extend beyond necessary */
+.main-content {
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
 .aurora-background {
