@@ -15,6 +15,7 @@ import {
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
 export const AuroraHero = () => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const color = useMotionValue(COLORS_TOP[0]);
 
     useEffect(() => {
