@@ -27,12 +27,10 @@ body {
   background: #020617;
 }
 
-/* Prevent content from being shorter than viewport */
 main {
   min-height: 100vh;
 }
 
-/* Ensure the main content container doesn't extend beyond necessary */
 .main-content {
   max-height: 100vh;
   overflow-y: auto;
@@ -40,6 +38,5 @@ main {
 
 .aurora-background {
   background: radial-gradient(150% 150% at 50% 0%, #020617 50%, var(--aurora-color-2));
-  /* animation: aurora-shift 10s ease-in-out infinite; */
   position: sticky;
 }
