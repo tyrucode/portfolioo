@@ -6,8 +6,8 @@ function Contact() {
             <h2 className="text-4xl font-bold text-white mb-8">Contact</h2>
             <div className="bg-gray-900/30 backdrop-blur-sm rounded-lg p-8 border border-gray-700/50">
                 <p className="text-gray-300 text-lg mb-6">
-                    I'm always open to new opportunities and collaborations.
-                    Feel free to reach out if you'd like to work together or simply connect via email or LinkedIn.
+                    I&apos;m always open to new opportunities and collaborations.
+                    Feel free to reach out if you&apos;d like to work together or simply connect via email or LinkedIn.
                     You can also check out my projects on GitHub!
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
