@@ -11,7 +11,7 @@ function Projects() {
                 <div className="bg-gray-900/30 backdrop-blur-sm rounded-lg p-8 border border-gray-700/50">
                     <h3 className="text-2xl font-semibold text-white mb-4">Guessify</h3>
                     <p className="text-gray-300 mb-4">
-                        Developed a dynamic web game where users connect their own Spotify playlists to guess song titles and compete for high scores. Inspired by Wordle, Guessify blends music and gameplay to create a personalized and shareable challenge for anyone who enjoys music.
+                        Developed a dynamic web game where users connect their own Spotify playlists using the Spotify API to guess song titles and compete for high scores. Inspired by Wordle, Guessify blends music and gameplay to create a personalized and shareable challenge for anyone who enjoys music.
                     </p>
                     <div className="flex flex-wrap gap-2">
                         <span className="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Javascript</span>
@@ -48,7 +48,7 @@ function Projects() {
                 <div className="bg-gray-900/30 backdrop-blur-sm rounded-lg p-8 border border-gray-700/50">
                     <h3 className="text-2xl font-semibold text-white mb-4">SteamFinder GPT</h3>
                     <p className="text-gray-300 mb-4">
-                        Developer a tool that allows users to connect their steam data using the steam api and allow chatgpt to give personalized reccomendations to games based on the users previous gaming history and the time they have spent on those games.
+                        Developed a tool that allows users to connect their steam data using the Steam API and allow ChatGPT to give personalized reccomendations to games based on the users previous gaming history and the time they have spent on those games.
                     </p>
                     <div className="flex flex-wrap gap-2">
                         <span className="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm">Javascript</span>
