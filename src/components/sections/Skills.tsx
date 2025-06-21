@@ -1,7 +1,7 @@
 
 import SectionBorder from "@/components/ui/SectionBorder";
 import { SiReact, SiTypescript, SiJavascript, SiTailwindcss, SiNodedotjs, SiExpress, SiAxios, SiMongodb, SiMysql, SiPostgresql, SiUbuntu, SiLinux, SiGithub, SiVercel } from "react-icons/si";
-import { RiNextjsFill } from "react-icons/ri";
+import { RiNextjsFill, RiSupabaseFill } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
 
 function Skills() {
@@ -34,6 +34,7 @@ function Skills() {
                         <li>• MongoDB <SiMongodb className="inline mb-1" /></li>
                         <li>• MySQL <SiMysql className="inline mb-1" /></li>
                         <li>• PostgreSQL <SiPostgresql className="inline mb-1" /></li>
+                        <li>• Supabase <RiSupabaseFill className="inline mb-1" /></li>
                     </ul>
                 </div>
                 <div className="bg-gray-900/30 backdrop-blur-sm rounded-lg p-6 border border-gray-700/50">
